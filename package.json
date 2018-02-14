@@ -2,9 +2,21 @@
   "name": "@storiqa/validation_specs",
   "version": "0.0.1",
   "description": "Shared validation specs for spected lib.",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "https://github.com/StoriqaTeam/share_validation.git",
   "author": "il.ya sald.in <saldin.iliya@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "dev": "./node_modules/.bin/babel-node ./src/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "devDependencies": {
+    "jest": "^22.3.0"
+  }
 }
