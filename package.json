@@ -1,0 +1,10 @@
+{
+  "name": "@storiqa/validation_specs",
+  "version": "0.0.1",
+  "description": "Shared validation specs for spected lib.",
+  "main": "index.js",
+  "repository": "https://github.com/StoriqaTeam/share_validation.git",
+  "author": "il.ya sald.in <saldin.iliya@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
