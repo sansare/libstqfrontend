@@ -1,6 +1,4 @@
-// export { default as rules } from './rules';
+import validate from './utils/validate';
+import specs from './specs';
 
-import { notEmpty } from './rules';
-
-console.log(notEmpty('a'))
-console.log(notEmpty(''))
+export { specs, validate };
