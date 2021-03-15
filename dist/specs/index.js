@@ -1,15 +1,15 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 
-var _profile = require('./profile');
-
-var _profile2 = _interopRequireDefault(_profile);
+var _profile = _interopRequireDefault(require("./profile"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = {
-  profile: _profile2.default
+var _default = {
+  profile: _profile.default
 };
+exports.default = _default;

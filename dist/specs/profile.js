@@ -1,17 +1,17 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 
-var _notEmpty = require('../rules/notEmpty');
-
-var _notEmpty2 = _interopRequireDefault(_notEmpty);
+var _notEmpty = _interopRequireDefault(require("../rules/notEmpty"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = {
-  firstName: [[_notEmpty2.default, 'Should not be empty']],
-  lastName: [[_notEmpty2.default, 'Should not be empty']],
-  middleName: [[_notEmpty2.default, 'Should not be empty']]
+var _default = {
+  firstName: [[_notEmpty.default, 'Should not be empty']],
+  lastName: [[_notEmpty.default, 'Should not be empty']],
+  middleName: [[_notEmpty.default, 'Should not be empty']]
 };
+exports.default = _default;

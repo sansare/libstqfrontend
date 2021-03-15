@@ -1,16 +1,15 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-var _validate = require('./validate');
-
-Object.defineProperty(exports, 'validate', {
+Object.defineProperty(exports, "validate", {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_validate).default;
+    return _validate.default;
   }
 });
+
+var _validate = _interopRequireDefault(require("./validate"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

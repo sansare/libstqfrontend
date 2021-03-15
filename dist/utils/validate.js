@@ -1,28 +1,26 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 
-var _spected = require('spected');
+var _spected = _interopRequireDefault(require("spected"));
 
-var _spected2 = _interopRequireDefault(_spected);
+var _ramda = require("ramda");
 
-var _ramda = require('ramda');
-
-var _extractErrors = require('./extractErrors');
-
-var _extractErrors2 = _interopRequireDefault(_extractErrors);
+var _extractErrors = _interopRequireDefault(require("./extractErrors"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var validate = function validate(specs, obj) {
-  var result = (0, _spected2.default)(specs, obj);
-  var errors = (0, _extractErrors2.default)(result);
+  var result = (0, _spected.default)(specs, obj);
+  var errors = (0, _extractErrors.default)(result);
   return {
     isValid: (0, _ramda.isEmpty)(errors),
     errors: errors && !(0, _ramda.isEmpty)(errors) ? errors : undefined
   };
 };
 
-exports.default = validate;
+var _default = validate;
+exports.default = _default;
