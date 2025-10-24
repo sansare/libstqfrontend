@@ -3,10 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
-
+exports["default"] = void 0;
 var _ramda = require("ramda");
-
-var _default = (0, _ramda.complement)(_ramda.isEmpty);
-
-exports.default = _default;
+var _default = exports["default"] = (0, _ramda.complement)(_ramda.isEmpty);

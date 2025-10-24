@@ -6,10 +6,8 @@ Object.defineProperty(exports, "__esModule", {
 Object.defineProperty(exports, "validate", {
   enumerable: true,
   get: function get() {
-    return _validate.default;
+    return _validate["default"];
   }
 });
-
 var _validate = _interopRequireDefault(require("./validate"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }

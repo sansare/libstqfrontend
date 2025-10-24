@@ -1,9 +1,7 @@
 "use strict";
 
 var _extractErrors = _interopRequireDefault(require("./extractErrors"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
 describe('extractErrors', function () {
   it('should correct extract errors', function () {
     var input = {
@@ -25,7 +23,7 @@ describe('extractErrors', function () {
       id: true,
       type: ['some error msg']
     };
-    expect((0, _extractErrors.default)(input)).toMatchObject({
+    expect((0, _extractErrors["default"])(input)).toMatchObject({
       profile: {
         surname: ['error msg']
       },

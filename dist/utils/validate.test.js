@@ -1,11 +1,8 @@
 "use strict";
 
 var _index = require("../index");
-
 var _notEmpty = _interopRequireDefault(require("../rules/notEmpty"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
 var objInvalid = {
   name: '',
   surname: 'a'
@@ -15,8 +12,8 @@ var objValid = {
   surname: 'a'
 };
 var spec = {
-  name: [[_notEmpty.default, 'Should not be empty']],
-  surname: [[_notEmpty.default, 'Should not be empty']]
+  name: [[_notEmpty["default"], 'Should not be empty']],
+  surname: [[_notEmpty["default"], 'Should not be empty']]
 };
 describe('validate', function () {
   it('should return errors array when object is not valid', function () {
