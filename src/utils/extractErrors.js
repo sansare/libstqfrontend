@@ -1,5 +1,5 @@
 import {
-  pipe, map, values, filter, is,
+  pipe, map, values, filter, is, isEmpty,
 } from 'ramda';
 
 const omitSuccess = object => {
@@ -7,7 +7,7 @@ const omitSuccess = object => {
     return false;
   } if (
     is(Object, object)
-    && map(values(object), filter(omitSuccess)) === []
+    && isEmpty(map(values(object), filter(omitSuccess)))
   ) {
     return false;
   }

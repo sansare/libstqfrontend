@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "Shared resoureces for frontend and mobile apps.",
   "main": "dist/index.js",
-  "repository": "https://github.com/StoriqaTeam/libstqfrontend.git",
+  "repository": "https://github.com/sansare/libstqfrontend.git",
   "author": "il.ya sald.in <saldin.iliya@gmail.com>",
   "license": "MIT",
   "private": true,
@@ -17,23 +17,24 @@
     "test": "jest",
     "test:watch": "jest --watch"
   },
-  "dependencies": {
-    "spected": "^0.7.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.28.3",
     "@babel/core": "^7.28.5",
     "@babel/preset-env": "^7.28.5",
-    "eslint": "^8.57.0",
+    "eslint": "^9.38.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-jest": "^29.0.1",
     "jest": "^30.2.0",
     "ramda": "^0.32.0"
   },
   "peerDependencies": {
     "ramda": "^0.32.0"
+  },
+  "resolutions": {
+    "glob": "^11.0.3",
+    "rimraf": "^6.0.1"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
